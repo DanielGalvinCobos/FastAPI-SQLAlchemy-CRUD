@@ -1,8 +1,8 @@
 from fastapi import FastAPI, Depends
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
-from practicaDatabase import engine, SessionLocal, Base
-import practicaModels as models
+from database import engine, SessionLocal, Base
+import models
 
 Base.metadata.create_all(bind=engine)
 

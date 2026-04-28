@@ -1,6 +1,6 @@
 from sqlalchemy.orm import Mapped, mapped_column
 from sqlalchemy import String, Boolean
-from practicaDatabase import Base
+from database import Base
 
 class Tarea(Base):
     __tablename__ = "tareas"
